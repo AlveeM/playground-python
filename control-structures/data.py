@@ -41,9 +41,14 @@ courses = {
 
 def when_offered(courses, course):
     # TODO: Fill out the function here.
+    result = []
+
+    for semester in courses:
+        if course in courses[semester]:
+            result.append(semester)
 
     # TODO: Return list of semesters here.
-    return None
+    return result
 
 
 
